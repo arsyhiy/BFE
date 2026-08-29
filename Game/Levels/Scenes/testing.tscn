@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://dbw8pwkyje56c"]
+
+[ext_resource type="Texture2D" uid="uid://nfnis0nbwmah" path="res://Assets/Textures/orange/texture_08.png" id="1_3utqf"]
+[ext_resource type="PackedScene" uid="uid://bjq8g4xwhwbtp" path="res://Enemy/Scripts/enemy.tscn" id="2_x838p"]
+[ext_resource type="PackedScene" uid="uid://bwggrf7sbmkcv" path="res://player/Scenes/player_character_scene.tscn" id="3_wgeqr"]
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_2jf48"]
+vertices = PackedVector3Array(-49.5, -1.0634804, -45.842247, -49.5, -1.0634804, 53.157753, 49.5, -1.0634804, 53.157753, 49.5, -1.0634804, -45.842247)
+polygons = [PackedInt32Array(3, 2, 0), PackedInt32Array(0, 2, 1)]
+geometry_parsed_geometry_type = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_otx8m"]
+albedo_texture = ExtResource("1_3utqf")
+
+[node name="Testing" type="Node3D" unique_id=1542639903]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=430540936]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 50, 0)
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="." unique_id=710909810]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.392656, -3.6577532)
+navigation_mesh = SubResource("NavigationMesh_2jf48")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D" unique_id=882547882]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.0634804, 3.6577532)
+use_collision = true
+size = Vector3(100, 1, 100)
+material = SubResource("StandardMaterial3D_otx8m")
+
+[node name="Enemy" parent="." unique_id=1775622319 node_paths=PackedStringArray("target") instance=ExtResource("2_x838p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.329, 28.795)
+target = NodePath("../player")
+
+[node name="player" parent="." unique_id=931181366 instance=ExtResource("3_wgeqr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.0141134, 0)
