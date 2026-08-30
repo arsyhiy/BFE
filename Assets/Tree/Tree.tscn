@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://eubsxmi4hstv"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_2bfdg"]
+top_radius = 0.95654297
+bottom_radius = 0.95654297
+height = 11.089111
+
+[node name="Tree" type="Node3D" unique_id=1232980363]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=448104372]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.5445557, 0)
+mesh = SubResource("CylinderMesh_2bfdg")

@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://nfnis0nbwmah" path="res://Assets/Textures/orange/texture_08.png" id="1_3utqf"]
 [ext_resource type="PackedScene" uid="uid://bjq8g4xwhwbtp" path="res://Enemy/Scripts/enemy.tscn" id="2_x838p"]
 [ext_resource type="PackedScene" uid="uid://bwggrf7sbmkcv" path="res://player/Scenes/player_character_scene.tscn" id="3_wgeqr"]
+[ext_resource type="PackedScene" uid="uid://bpy07aspasmwx" path="res://FogSystem/fogtest.tscn" id="4_x838p"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_2jf48"]
 vertices = PackedVector3Array(-49.5, -1.0634804, -45.842247, -49.5, -1.0634804, 53.157753, 49.5, -1.0634804, 53.157753, 49.5, -1.0634804, -45.842247)
@@ -33,3 +34,6 @@ target = NodePath("../player")
 
 [node name="player" parent="." unique_id=931181366 instance=ExtResource("3_wgeqr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.0141134, 0)
+
+[node name="Fogtest" parent="." unique_id=1050152656 instance=ExtResource("4_x838p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2667713, 1.4151471, 5.9011507)
