@@ -39,6 +39,14 @@ func _ready() -> void:
 	await initialize()
 	
 func initialize() -> void:
+	for weapon in weapon_container.get_children():
+		print("WEAPON: ", weapon)
+		print("MODEL: ", weapon.model)
+		print("RESOURCE: ", weapon.resources)
+
+		weapon.model.hide()
+		weapon_list[weapon.resources.weapon_id] = weapon
+		
 	#stok all weapons
 	for weapon in weapon_container.get_children():
 		weapon.model.hide() #cache tous les modèles

@@ -11,8 +11,8 @@ point_count = 4
 
 [resource]
 script = ExtResource("2_qdty1")
-weapon_name = "Pistol"
-weapon_id = 6
+weapon_name = "nagat"
+weapon_id = 2
 anim_blend_time = 0.2
 equip_anim_name = "EquipAnimPistol"
 unequip_anim_name = "UnequipAnimPistol"
@@ -35,7 +35,7 @@ reload_time_per_part = 1.1
 base_rot_speed = 7.0
 target_rot_speed = 8.0
 recoil_val = Vector3(0.08, 0.016, 0)
-pos_val = Array[Vector3]([Vector3(0.2009259, -0.12446213, -0.26282233), Vector3(-1.5707964, 1.5707964, 0)])
+pos_val = Array[Vector3]([Vector3(0.32550228, -0.4052313, -0.7994287), Vector3(-0.008718447, -4.3713047e-08, 1.5707964)])
 back_to_origin_pos_speed = 0.1
 axis_to_tilt = 0
 tilt_rot_speed = 8.0
