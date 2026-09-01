@@ -1544,13 +1544,13 @@ far = 1000.0
 unique_name_in_owner = true
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.715, 0)
 script = ExtResource("11_b6u67")
-start_weapons = [NodePath("WeaponContainer/Pistol"), NodePath("WeaponContainer/AssaultRifle"), NodePath("WeaponContainer/Shotgun"), NodePath("WeaponContainer/SniperRifle"), NodePath("WeaponContainer/RocketLauncher")]
+start_weapons = [NodePath("WeaponContainer/Pistol"), NodePath("WeaponContainer/AssaultRifle"), NodePath("WeaponContainer/Shotgun"), NodePath("WeaponContainer/SniperRifle"), NodePath("WeaponContainer/RocketLauncher"), NodePath("")]
 
 [node name="WeaponContainer" type="Node3D" parent="WeaponManager" unique_id=1471997672]
 unique_name_in_owner = true
 
 [node name="Pistol" type="Node3D" parent="WeaponManager/WeaponContainer" unique_id=328836073 node_paths=PackedStringArray("model", "attack_point", "muzzle_flash_spawner")]
-transform = Transform3D(-3.059797e-06, -70, -3.059797e-06, 0, -3.059797e-06, 70, -70, 3.059797e-06, 1.3374798e-13, 0.2009259, -0.12446213, -0.26282233)
+transform = Transform3D(-3.059797e-06, -70, -3.059797e-06, 0, -3.059797e-06, 70, -70, 3.059797e-06, 1.3374798e-13, 0.2009259, 0.1276862, -0.21976702)
 script = ExtResource("12_7tily")
 resources = ExtResource("13_vfiqf")
 model = NodePath(".")
@@ -2245,7 +2245,7 @@ render_target_update_mode = 4
 
 [node name="ViewportCam" type="Camera3D" parent="SubViewportContainer/SubViewport" unique_id=1621469486]
 unique_name_in_owner = true
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.540581, 0)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0.540581, 1.7053026e-13)
 cull_mask = 2
 environment = SubResource("Environment_i3wqj")
 fov = 90.0

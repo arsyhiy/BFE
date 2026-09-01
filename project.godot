@@ -19,6 +19,10 @@ config/features=PackedStringArray("4.7", "Forward Plus")
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
+[filesystem]
+
+import/blender/enabled=false
+
 [input]
 
 play_char_move_forward_action={
