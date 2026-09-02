@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dbjce85wtp4tq"]
 
 [ext_resource type="Script" uid="uid://bafos75c636tq" path="res://Addons/WeaponPositionEditor/weapon_position_editor.gd" id="1_avdlm"]
-[ext_resource type="PackedScene" uid="uid://naki3vv1x874" path="res://Assets/armory/mosin_nagat/nagat.tscn" id="2_ajfx0"]
+[ext_resource type="PackedScene" uid="uid://naki3vv1x874" path="res://Assets/armory/Rifle/Rifle.tscn" id="2_ajfx0"]
 
 [node name="WeaponPositionEditor" type="Node3D" unique_id=510009229 node_paths=PackedStringArray("weapon_container")]
 script = ExtResource("1_avdlm")

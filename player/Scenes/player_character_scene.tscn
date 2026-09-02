@@ -11,7 +11,7 @@
 [ext_resource type="Script" uid="uid://b0fbr48rbvn27" path="res://player/Scripts/Camera/camera_script.gd" id="9_tfdad"]
 [ext_resource type="Script" uid="uid://k7djd8c1xge2" path="res://Weapons/Scripts/Camera/camera_recoil_holder_script.gd" id="10_tg331"]
 [ext_resource type="Script" uid="uid://d2jpda3mq5jpa" path="res://Weapons/Scripts/weapon_manager_script.gd" id="11_b6u67"]
-[ext_resource type="PackedScene" uid="uid://y6yjljdlumgu" path="res://Assets/armory/pistol/pistol.tscn" id="12_l0nta"]
+[ext_resource type="PackedScene" uid="uid://y6yjljdlumgu" path="res://Assets/armory/pistol/Pistol.tscn" id="12_l0nta"]
 [ext_resource type="Script" uid="uid://pufyqjrkl22t" path="res://Weapons/Scripts/shoot_managers_script.gd" id="19_pt581"]
 [ext_resource type="Script" uid="uid://cfbsp443am2jd" path="res://Weapons/Scripts/reload_manager_script.gd" id="20_5v8br"]
 [ext_resource type="Script" uid="uid://b45mr122adhlv" path="res://Weapons/Scripts/Ammunition/ammunition_manager_script.gd" id="21_tor3i"]
@@ -19,7 +19,7 @@
 [ext_resource type="Script" uid="uid://dx02l6p6behb8" path="res://Interface/HUD/Scripts/hud_script.gd" id="23_55glt"]
 [ext_resource type="Shader" uid="uid://b34228uop3gdf" path="res://Assets/Shaders/speed_lines_shader.gdshader" id="24_sjjl7"]
 [ext_resource type="Texture2D" uid="uid://jwucel52ti1u" path="res://Weapons/Images/weapon_crosshair.png" id="25_i61w1"]
-[ext_resource type="PackedScene" uid="uid://naki3vv1x874" path="res://Assets/armory/mosin_nagat/nagat.tscn" id="25_qlx5w"]
+[ext_resource type="PackedScene" uid="uid://naki3vv1x874" path="res://Assets/armory/Rifle/Rifle.tscn" id="25_qlx5w"]
 [ext_resource type="StyleBox" uid="uid://c50syhy1a4dmh" path="res://Interface/HUD/Arts/player_character_hud_theme.tres" id="26_7o53t"]
 [ext_resource type="LabelSettings" uid="uid://bs0stms0b56kp" path="res://Interface/HUD/Arts/label_settings.tres" id="27_fc6b1"]
 [ext_resource type="Script" uid="uid://cptlccjp685rs" path="res://Weapons/Scripts/Camera/viewport_camera_script.gd" id="28_1lxs5"]
@@ -270,7 +270,7 @@ unique_name_in_owner = true
 [node name="Pistol" parent="WeaponManager/WeaponContainer" unique_id=1985151585 instance=ExtResource("12_l0nta")]
 
 [node name="nagat" parent="WeaponManager/WeaponContainer" unique_id=1043182489 instance=ExtResource("25_qlx5w")]
-transform = Transform3D(70, 9.094947e-13, 2.7105054e-20, 0, -3.059797e-06, 70, 9.094947e-13, -70, -3.059797e-06, -0.6567592, -0.19477516, 0.16505021)
+transform = Transform3D(70, 9.094947e-13, 2.7105054e-20, 0, -3.059797e-06, 70, 9.094947e-13, -70, -3.059797e-06, 0.18156207, -0.19477516, 0.16505025)
 
 [node name="ShootManager" type="Node3D" parent="WeaponManager" unique_id=2026881824]
 unique_name_in_owner = true

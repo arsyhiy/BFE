@@ -1,30 +1,30 @@
 [gd_scene format=3 uid="uid://naki3vv1x874"]
 
 [ext_resource type="Script" uid="uid://bcka80usfl4am" path="res://Weapons/Scripts/weapon_slot_script.gd" id="1_quhjl"]
-[ext_resource type="Resource" uid="uid://5s5d4o4ct8y7" path="res://Weapons/Resources/nagat.tres" id="2_vkrlv"]
+[ext_resource type="Resource" uid="uid://5s5d4o4ct8y7" path="res://Weapons/Resources/rifle_weapon_resources.tres" id="2_vkrlv"]
 
-[node name="nagat" type="Node3D" unique_id=1985151585 node_paths=PackedStringArray("model", "attack_point", "muzzle_flash_spawner")]
+[node name="rifle" type="Node3D" unique_id=1985151585 node_paths=PackedStringArray("model", "attack_point", "muzzle_flash_spawner")]
 transform = Transform3D(-2.4689984e-06, -70, -3.059797e-06, 0, -3.059797e-06, 70, -56.484104, 3.059797e-06, 1.3374798e-13, 0, 0, 0)
 script = ExtResource("1_quhjl")
 resources = ExtResource("2_vkrlv")
 model = NodePath(".")
-attack_point = NodePath("nagat/NagatAttackPoint")
-muzzle_flash_spawner = NodePath("nagat/NagatMuzzleFlashSpawner")
+attack_point = NodePath("rifle/NagatAttackPoint")
+muzzle_flash_spawner = NodePath("rifle/NagatMuzzleFlashSpawner")
 
-[node name="nagat" type="Node3D" parent="." unique_id=164251379]
+[node name="rifle" type="Node3D" parent="." unique_id=164251379]
 transform = Transform3D(0.17364822, 0, 0.9848077, 0, 1, 0, -0.9848077, 0, 0.17364822, 0, 0, -0.006)
 
-[node name="CSGBox3D" type="CSGBox3D" parent="nagat" unique_id=961748242]
+[node name="CSGBox3D" type="CSGBox3D" parent="rifle" unique_id=961748242]
 transform = Transform3D(0.03625855, 0.0008009336, -1.1303977e-11, -9.79953e-16, -2.016141e-10, -0.0014892466, -0.006393365, 0.004542317, -6.410802e-11, -0.0012436267, 0.00023274374, -0.0031218145)
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="nagat/CSGBox3D" unique_id=1711090110]
+[node name="CSGBox3D2" type="CSGBox3D" parent="rifle/CSGBox3D" unique_id=1711090110]
 transform = Transform3D(0.018430948, -1.4645973e-10, 5.9741293e-15, 3.2311405e-08, 0.4335541, 8.881784e-16, -4.0666547e-15, -6.217249e-15, 0.71954226, 0.18666685, 0.55364066, 0.031454556)
 size = Vector3(1, 1, 0.26611328)
 
-[node name="NagatAttackPoint" type="Marker3D" parent="nagat" unique_id=451283316]
+[node name="NagatAttackPoint" type="Marker3D" parent="rifle" unique_id=451283316]
 unique_name_in_owner = true
 transform = Transform3D(0.9999996, 0, -1.4901161e-08, -8.881784e-15, 1, 3.5527137e-15, 1.4901161e-08, 0, 0.9999996, 0.012391755, 0.00032568804, -0.0007710153)
 
-[node name="NagatMuzzleFlashSpawner" type="Marker3D" parent="nagat" unique_id=2100967793]
+[node name="NagatMuzzleFlashSpawner" type="Marker3D" parent="rifle" unique_id=2100967793]
 unique_name_in_owner = true
 transform = Transform3D(0.9999996, 0, -1.4901161e-08, -8.881784e-15, 1, 3.5527137e-15, 1.4901161e-08, 0, 0.9999996, 0.0131890755, 0.0004119279, -0.001181918)
