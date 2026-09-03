@@ -26,16 +26,6 @@
 [ext_resource type="Script" uid="uid://cnpa03x4ajc8b" path="res://player/Scripts/Misc/link_component_script.gd" id="29_fd2xb"]
 [ext_resource type="Script" uid="uid://cwh0y70pui8io" path="res://player/Scripts/Misc/input_management_component_script.gd" id="30_2u811"]
 
-[sub_resource type="Curve" id="Curve_1dajo"]
-_limits = [10.0, 30.0, 0.0, 60.0]
-_data = [Vector2(0, 10), 0.0, 0.0, 0, 0, Vector2(60, 30), 0.0, 0.0, 0, 0]
-point_count = 2
-
-[sub_resource type="Curve" id="Curve_u7t1t"]
-_limits = [3.0, 30.0, 0.0, 30.0]
-_data = [Vector2(0, 3), 0.0, 0.0, 0, 0, Vector2(30, 30), 0.0, 0.0, 0, 0]
-point_count = 2
-
 [sub_resource type="Animation" id="Animation_8yq60"]
 resource_name = "EquipAnimAssaultRifle"
 length = 0.19
@@ -207,16 +197,6 @@ floor_max_angle = 1.13446
 floor_snap_length = 0.0
 platform_floor_layers = 4278190081
 script = ExtResource("1_l6rkn")
-desired_move_speed_curve = SubResource("Curve_1dajo")
-in_air_move_speed_curve = SubResource("Curve_u7t1t")
-crouch_speed = 4.0
-walk_speed = 6.0
-run_speed = 10.0
-continious_run = true
-jump_height = 1.4
-jump_time_to_peak = 0.24
-jump_time_to_fall = 0.2
-nb_jumps_in_air_allowed = 0
 
 [node name="StateMachine" type="Node" parent="." unique_id=714906912 node_paths=PackedStringArray("initial_state")]
 unique_name_in_owner = true
@@ -763,3 +743,6 @@ script = ExtResource("29_fd2xb")
 [node name="InputManagementComponent" type="Node" parent="." unique_id=1706940269]
 unique_name_in_owner = true
 script = ExtResource("30_2u811")
+
+[node name="TerrainRay" type="RayCast3D" parent="." unique_id=100446555]
+target_position = Vector3(0, -2, 0)

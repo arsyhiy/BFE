@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://bpy07aspasmwx"]
 
 [ext_resource type="Script" uid="uid://dxkvqfx317cyw" path="res://FogSystem/forestgenerator.gd" id="1_kg5v1"]
-[ext_resource type="PackedScene" uid="uid://eubsxmi4hstv" path="res://Assets/Tree/Tree.tscn" id="2_782k4"]
 
 [sub_resource type="Environment" id="Environment_ej0k5"]
 fog_density = 0.0
@@ -39,4 +38,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8.428302)
 
 [node name="forestgenerator" type="Node3D" parent="." unique_id=1372413897]
 script = ExtResource("1_kg5v1")
-tree_scene = ExtResource("2_782k4")
