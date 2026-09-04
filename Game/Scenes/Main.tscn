@@ -4,8 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://bwggrf7sbmkcv" path="res://player/Scenes/player_character_scene.tscn" id="2_g0nht"]
 [ext_resource type="PackedScene" uid="uid://bpy07aspasmwx" path="res://FogSystem/Scenes/fogtest.tscn" id="3_vbxeb"]
 [ext_resource type="PackedScene" uid="uid://cwiu5lhigwi1m" path="res://ForestGenerator/Scenes/ForestGeneration.tscn" id="4_aqv53"]
-[ext_resource type="Script" uid="uid://dxkvqfx317cyw" path="res://ForestGenerator/Scripts/forestgenerator.gd" id="5_t7rgc"]
-[ext_resource type="PackedScene" uid="uid://eubsxmi4hstv" path="res://Assets/Tree/Tree.tscn" id="6_uibud"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_2jf48"]
 vertices = PackedVector3Array(-49.5, -1.0634804, -45.842247, -49.5, -1.0634804, 53.157753, 49.5, -1.0634804, 53.157753, 49.5, -1.0634804, -45.842247)
@@ -20,13 +18,15 @@ geometry_parsed_geometry_type = 1
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=430540936]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 50, 0)
+light_color = Color(0.572029, 0.4824596, 0.00841056, 1)
+light_energy = 0.1
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="." unique_id=710909810]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9750769, -3.658)
 navigation_mesh = SubResource("NavigationMesh_2jf48")
 
 [node name="Enemy" parent="." unique_id=1775622319 node_paths=PackedStringArray("target") instance=ExtResource("1_p0tac")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.329, 28.795)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.7405598, 28.795)
 target = NodePath("../player")
 
 [node name="player" parent="." unique_id=931181366 instance=ExtResource("2_g0nht")]
@@ -36,8 +36,5 @@ in_air_move_speed_curve = SubResource("Curve_wgeqr")
 
 [node name="Fogtest" parent="." unique_id=1050152656 instance=ExtResource("3_vbxeb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2667713, 1.4151471, 5.9011507)
-script = null
 
 [node name="ForestGeneration" parent="." unique_id=2005693911 instance=ExtResource("4_aqv53")]
-script = ExtResource("5_t7rgc")
-tree_scene = ExtResource("6_uibud")

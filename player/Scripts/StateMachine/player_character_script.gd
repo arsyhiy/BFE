@@ -140,11 +140,15 @@
 	#model_tween.finished.connect(Callable(model_tween, "kill"))
 		#
 
+
+
+
+
+
 extends CharacterBody3D
 
 class_name PlayerCharacter
 
-# ========== ВАШИ СУЩЕСТВУЮЩИЕ ПЕРЕМЕННЫЕ ==========
 @export_group("Movement variables")
 var move_speed: float
 var move_accel: float
@@ -303,6 +307,7 @@ func get_ground_height() -> float:
 	return -INF  # Всегда возвращаем -INF
 
 # ========== ПРИЛИПАНИЕ К ЗЕМЛЕ (ОТКЛЮЧЕНО) ==========
+# NOTE: честно хуйню придумал chatgpt
 func apply_terrain_follow(delta: float) -> void:
 	pass  # Функция отключена
 

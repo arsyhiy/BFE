@@ -1,8 +1,5 @@
 [gd_scene format=3 uid="uid://bpy07aspasmwx"]
 
-[ext_resource type="Script" uid="uid://dxkvqfx317cyw" path="res://ForestGenerator/Scripts/forestgenerator.gd" id="1_kg5v1"]
-[ext_resource type="PackedScene" uid="uid://eubsxmi4hstv" path="res://Assets/Tree/Tree.tscn" id="2_782k4"]
-
 [sub_resource type="Environment" id="Environment_ej0k5"]
 fog_density = 0.0
 volumetric_fog_enabled = true
@@ -13,31 +10,10 @@ volumetric_fog_length = 128.0
 density = 0.05
 
 [node name="Fogtest" type="Node3D" unique_id=1050152656]
-script = ExtResource("1_kg5v1")
-tree_scene = ExtResource("2_782k4")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1468683453]
 environment = SubResource("Environment_ej0k5")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1870690152]
-transform = Transform3D(1, 0, 0, 0, 0.93947846, 0.34260803, 0, -0.34260803, 0.93947846, 0, 7.5425963, 0)
-shadow_enabled = true
-
 [node name="FogVolume" type="FogVolume" parent="." unique_id=1434428133]
 size = Vector3(50, 50, 50)
 material = SubResource("FogMaterial_4tkrk")
-
-[node name="Camera3D" type="Camera3D" parent="." unique_id=1679062115]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8847275, 0)
-
-[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1958177377]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -62.266132)
-
-[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=1595501187]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -21.154528)
-
-[node name="CSGBox3D3" type="CSGBox3D" parent="." unique_id=968038243]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8.428302)
-
-[node name="forestgenerator" type="Node3D" parent="." unique_id=1372413897]
-script = ExtResource("1_kg5v1")
