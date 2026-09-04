@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cwiu5lhigwi1m"]
+
+[ext_resource type="Script" uid="uid://dxkvqfx317cyw" path="res://ForestGenerator/Scripts/forestgenerator.gd" id="1_mjv3o"]
+[ext_resource type="PackedScene" uid="uid://eubsxmi4hstv" path="res://Assets/Tree/Tree.tscn" id="2_p2i70"]
+
+[node name="ForestGeneration" type="Node3D" unique_id=2005693911]
+script = ExtResource("1_mjv3o")
+tree_scene = ExtResource("2_p2i70")

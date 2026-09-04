@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bpy07aspasmwx"]
 
-[ext_resource type="Script" uid="uid://dxkvqfx317cyw" path="res://FogSystem/forestgenerator.gd" id="1_kg5v1"]
+[ext_resource type="Script" uid="uid://dxkvqfx317cyw" path="res://ForestGenerator/Scripts/forestgenerator.gd" id="1_kg5v1"]
+[ext_resource type="PackedScene" uid="uid://eubsxmi4hstv" path="res://Assets/Tree/Tree.tscn" id="2_782k4"]
 
 [sub_resource type="Environment" id="Environment_ej0k5"]
 fog_density = 0.0
@@ -12,6 +13,8 @@ volumetric_fog_length = 128.0
 density = 0.05
 
 [node name="Fogtest" type="Node3D" unique_id=1050152656]
+script = ExtResource("1_kg5v1")
+tree_scene = ExtResource("2_782k4")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1468683453]
 environment = SubResource("Environment_ej0k5")
